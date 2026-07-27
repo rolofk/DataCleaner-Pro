@@ -1,5 +1,6 @@
-Nombre,Edad,Ciudad,Email
-Juan,25,Madrid,juan@email.com
-Maria,,Barcelona,maria@email.com
-Juan,25,Madrid,juan@email.com
-Carlos,30,,carlos@email.com
+Cliente,Producto,Precio
+juan perez,laptop,1200
+maria gomez,telefono,
+juan perez,laptop,1200
+carlos lopez,teclado,45
+,mouse,20
