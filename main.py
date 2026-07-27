@@ -45,4 +45,4 @@ def limpiar_datos_ventas(archivo_entrada, archivo_salida):
 
 # Comando de ejecución principal
 if __name__ == "__main__":
-    limpiar_datos_ventas("ventas_crudas.csv", "reporte_limpio.xlsx")
+    limpiar_datos('datos_ejemplo.csv', 'datos_limpios.csv')
