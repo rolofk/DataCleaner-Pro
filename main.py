@@ -9,7 +9,7 @@ def limpiar_datos_ventas(archivo_entrada, archivo_salida):
     if not os.path.exists(archivo_entrada):
         print(f"❌ Error: No se encontró el archivo '{archivo_entrada}'.")
         return
-
+        
     try:
         # 1. Leer los datos crudos
         print("📖 Leyendo archivo desordenado...")
@@ -27,7 +27,7 @@ def limpiar_datos_ventas(archivo_entrada, archivo_salida):
         
         # 4. Estandarizar el formato de texto (mayúsculas y minúsculas)
         print("📝 Estandarizando formato de texto...")
-        df['Cliente'] = df['Cliente'].str.title() # Convierte "juan perez" a "Juan Perez"
+        df['Cliente'] = df['Cliente'].str.title()  # Convierte "juan perez" a "Juan Perez"
         df['Producto'] = df['Producto'].str.capitalize()
         
         # 5. Exportar el resultado a un Excel limpio
@@ -45,4 +45,4 @@ def limpiar_datos_ventas(archivo_entrada, archivo_salida):
 
 # Comando de ejecución principal
 if __name__ == "__main__":
-    limpiar_datos('datos_ejemplo.csv', 'datos_limpios.csv')
+    limpiar_datos_ventas('datos_ejemplo.csv', 'datos_limpios.xlsx')
